@@ -84,9 +84,10 @@ elseif correctedh == 1
         j=j+1;
     end
 end
-%Plots the approximate solution to the given differential equation
-plot(t,y)
-
+%Plots the approximate solution to the given differential equation and
+%compares it to the MATLAB built in solution ode45
+[to,yo] = ode45(dydt,tspan,y0)
+plot(t,y,"-*g",to,yo,"--r")
 
 end
 

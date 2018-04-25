@@ -84,8 +84,9 @@ elseif correctedh == 1
         j=j+1;
     end
 end
+%Plots the approximate solution to the given differential equation
 plot(t,y)
-
+[to,yo] = ode45(dydt
 
 end
 
