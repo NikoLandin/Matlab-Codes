@@ -7,3 +7,4 @@ Each algorithm is built to use numerical methods to output a numerical answer to
 3.Simpson
 
   
+4.Heun  
