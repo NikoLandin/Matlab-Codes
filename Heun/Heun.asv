@@ -28,7 +28,7 @@ end
 %together or if there must be a seperate h for the last predictor corrector
 equalspan = tspan/h; %creates an array representing the number of intervals
 integr = floor(equalspan); %creates an array that will help determine if the number of intervals is an integer
-correctedh = 0; %indicates which while loop to run for the correct
+correctedh = 0; %indicates which while loop to ru
 if integr ~= equalspan
     lastint = equalspan - integr;
     hf = lastint(1,2)*h; %corrected step size for the last interval
@@ -88,10 +88,6 @@ end
 %compares it to the MATLAB built in solution ode45
 [to,yo] = ode45(dydt,tspan,y0)
 plot(t,y,"-*g",to,yo,"--r")
-title('Differential solution')
-xlabel('t-values')
-ylabel('y-values')
-legend('Heuns Method','ode45 function')
 
 end
 
